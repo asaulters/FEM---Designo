@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
   <header class="mainHeader">
   <nav class="mainNav">  
     <div class="logo">
-      <img src="/assets/shared/desktop/logo-dark.png" alt="">
+      <img src="/assets/shared/desktop/logo-dark.png" class="logoTop" alt="">
     </div>
     <ul class="nav-links">
         <li><a href="#">Our Company</a></li>
@@ -30,55 +31,76 @@
 
   <!-- /nav -->
   <!-- jumbotron -->
-  <head class="mainHead">
-    <h3 class="mainHeadH3">Award-winning custom designs and digital branding solutions</h3>
+  <section class="mainHead">
+    <div class="topWu">
+      <h3 class="mainHeadH3">Award-winning custom designs and digital branding solutions</h3>
 
-    <p class="mainHeadP">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
-    and engaging brand experiences. Find out more about our services.</p>
+      <p class="mainHeadP">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
+      and engaging brand experiences. Find out more about our services.</p>
+      <button class="mainHeadButton">Learn more</button>
+    </div>
+    <div class="topImg"></div>
+    <!-- <img src="/assets/home/desktop/image-hero-phone.png" alt="" class="topImg"> -->
     
-    <button class="mainHeadButton">Learn more</bugtton>
-  </head>
+  </section>
   <!-- /jumbotron -->
   <!-- main body -->
   <main class="home-mainContainer">
 
   <section class="home-designOptions">
     <div class="home-designWeb">
-      <h1 class="home-designH1">Web Design</h1>
-      <h4 class="home-designH4">View Projects</h4>
+      <div class="home-designWu">
+        <h1 class="home-designH1">Web Design</h1>
+        <h4 class="home-designH4">View Projects  <a> <img src="/assets/shared/desktop/icon-right-arrow.svg" class="arrowImg"></a></a></h4>
+      </div>
     </div>
     <div class="home-designApp">
-      <h1 class="home-designH1">App Design</h1>
-      <h4 class="home-designH4">View Projects</h4>
+      <div class="home-designWu">
+        <h1 class="home-designH1">App Design</h1>
+        <h4 class="home-designH4">View Projects  <a> <img src="/assets/shared/desktop/icon-right-arrow.svg" class="arrowImg"></a></h4>
+      </div>
     </div>
     <div class="home-designGraphic">
-      <h1 class="home-designH1">Graphic Design</h1>
-      <h4 class="home-designH4">View Projects</h4>
+      <div class="home-designWu">
+        <h1 class="home-designH1">Graphic Design</h1>
+        <h4 class="home-designH4">View Projects  <a> <img src="/assets/shared/desktop/icon-right-arrow.svg" class="arrowImg"></a></h4>
+      </div>
     </div>
   </section>
   <section class="home-aboutUs">
     <div class="home-about1">
-      <img src="/assets/home/desktop/illustration-passionate.svg" alt="" class="home-aboutImg">
-      <h2 class="home-abouth2">Passionate</h2>
-      <p class="home-aboutP">Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
-        art, design, and technology into exciting new solutions.</p>
+      <div class="home-aboutImg">
+        <img src="/assets/home/desktop/illustration-passionate.svg" alt="" class="home-aboutImg">
+      </div>
+      <div class="home-aboutWU">
+        <h2 class="home-abouth2">Passionate</h2>
+        <p class="home-aboutP">Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
+          art, design, and technology into exciting new solutions.</p>
+      </div>
     </div>
     <div class="home-about2">
-      <img src="/assets/home/desktop/illustration-resourceful.svg" alt="" class="home-aboutImg">
-      <h2 class="home-abouth2">Resourceful</h2>
-      <p class="home-aboutP">Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
-        collaboration. It guarantees superior results that fulfill our clients’ needs.</p>
+      <div class="home-aboutImg">
+        <img src="/assets/home/desktop/illustration-resourceful.svg" alt="" class="home-aboutImg">
+      </div>
+      <div class="home-aboutWU">
+        <h2 class="home-abouth2">Resourceful</h2>
+        <p class="home-aboutP">Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
+          collaboration. It guarantees superior results that fulfill our clients’ needs.</p>
+      </div>
     </div>
     <div class="home-about3">
-      <img src="/assets/home/desktop/illustration-friendly.svg" alt="" class="home-aboutImg">
-      <h2 class="home-abouth2">Friendly</h2>
-      <p class="home-aboutP">We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
-        strive to give them the best experience a company can provide.</p>
+      <div class="home-aboutImg">
+        <img src="/assets/home/desktop/illustration-friendly.svg" alt="" class="home-aboutImg">
+      </div>
+      <div class="home-aboutWU">
+        <h2 class="home-abouth2">Friendly</h2>
+        <p class="home-aboutP">We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.</p>
+      </div>
     </div>
   </section>
   <section class="home-talk">
     <h1 class="home-talkH1">Let’s talk about your project</h1>
-    <p class="home-talkH1">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+    <p class="home-talkP">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
     <button class="home-talkButton">Get in touch</button>
   </section>
 
@@ -86,24 +108,24 @@
   <!-- /main body -->
   <!-- footer -->
 <footer class="mainFooter">
-  <div class="footerLogo"></div>
+  <div class="footerLogo"><img src="/assets/shared/desktop/logo-light.png" alt="" class="footerLogoImg"></div>
 
   <ul class="footerLinks">
     <li><a href="#">Our company</a></li>
     <li><a href="#">Locations</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
-  <div class="footerLocation">
+  <div class="footerLocation footBottomGrp">
     <h4 class="footerH4">Designo Central Office</h4>
     <p class="footerP">3886 Wellington Street</p>
     <p class="footerP">Toronto, Ontario M9C 3J5</p>
   </div>
-  <div class="footerContact">
+  <div class="footerContact footBottomGrp">
     <h4 class="footerH4">Contact Us (Central Office)</h4>
     <p class="footerP">P : +1 253-863-8967</p>
     <p class="footerP">M : contact@designo.co</p>
   </div>
-  <div class="btn-group ">
+  <div class="btn-group footBottomGrp">
     <a href="#"><img src="/assets/shared/desktop/icon-facebook.svg" alt="" class="socialBtns"></a>
     <a href="#"><img src="/assets/shared/desktop/icon-instagram.svg" alt="" class="socialBtns"></a>
     <a href="#"><img src="/assets/shared/desktop/icon-pinterest.svg" alt="" class="socialBtns"></a>
