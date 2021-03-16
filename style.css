@@ -206,6 +206,7 @@ End Nav-------------------------------------
     z-index: 10;
     position: relative;
     border-radius: 25px;
+    font-family: 'Jost', sans-serif;
 }
 .home-talkP{
     width: 90%;
@@ -213,6 +214,7 @@ End Nav-------------------------------------
     padding-top: 7%;
     color: white;
     font-size: 20px;
+    font-family: 'Jost', sans-serif;
 }
 .home-talkButton{
     width: 40%;
@@ -221,12 +223,16 @@ End Nav-------------------------------------
     margin-top: 5%;
     margin-left: 30%;
     margin-bottom: 5%;
-    
+    font-family: 'Jost', sans-serif;
 }
 
 
 /* -----------------------------------------
 Shared end----------------------------------
+-----------------------------------------*/
+
+/* -----------------------------------------
+Home-----------------------------------------
 -----------------------------------------*/
 
 .mainHead{
@@ -346,6 +352,86 @@ Shared end----------------------------------
     background: lightgray;
 }
 
+/* -----------------------------------------
+Web Deisgn-----------------------------------------
+-----------------------------------------*/
+.wd-Top{
+    height: 300px;
+    background-color: #e78168;
+    background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.wd-topH1{
+    color: white;
+    margin: auto;
+    padding-top: 30%;
+    font-family: 'Jost', sans-serif;
+}
+.wd-topP{
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+    font-weight: 800;
+    line-height: 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+.wd-mainEx{
+    margin-top: 5%;
+}
+
+.wd-main1,
+.wd-main2,
+.wd-main3,
+.wd-main4,
+.wd-main5,
+.wd-main6{
+    height: 450px;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    width: 95%;
+    margin: auto;
+    padding-top: 5%;
+}
+.wd-mainImgTop{
+    grid-row: 1/2;
+    
+}
+.wd-Img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px ;
+}
+.wd-mainWU{
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #f8ded9;
+    border-radius: 0px 0px 10px 10px;
+
+    font-family: 'Jost', sans-serif;
+}
+.wd-mainH3{
+    color: #e78168;
+}
+.wd-mainP{
+    color: black;
+    width: 80%;
+    margin: auto;
+}
+#wd-designAppWU,
+#wd-designGDWU{
+    padding-top: 10%;
+}
+
+
+
+
+
+
+
+
 /* 
 @media(min-width: 419px){
   .topImg{
@@ -384,9 +470,7 @@ Shared end----------------------------------
         position: relative;
     }
     
-    .topWu{
-        
-    }
+
     .mainHeadH3{
         font-size: 35px;
     }
@@ -522,8 +606,49 @@ Shared end----------------------------------
     padding-left: 10%;
 }
 
+/* ----------------------------------------
+Tablet Web Design------------------------
+----------------------------------------*/
 
+.wd-topH1{
+    padding-top: 10%;
+    font-size: 40px;
+    font-family: 'Jost', sans-serif;
+    
+}
+.wd-topP{
+    line-height: 30px;
+    width: 80%;
+}
 
+.wd-main1,
+.wd-main2,
+.wd-main3,
+.wd-main4,
+.wd-main5,
+.wd-main6{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: min-content;
+
+}
+.wd-mainImgTop{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+}
+.wd-Img{
+    border-radius: 10px 0px 0px 10px; 
+}
+.wd-mainWU{
+    grid-column: 2/3;
+    grid-row: 1/2; 
+    border-radius: 0px 10px 10px 0px;
+}
+.wd-mainH3{
+    padding-top: 3rem;
+    font-size: 2em;
 }
 
 
