@@ -3,55 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
-  Our Company
-  Locations
-  Contact
+  <!-- Nav -->
+  <header class="mainHeader">
+    <nav class="mainNav">  
+      <div class="logo">
+        <img src="/assets/shared/desktop/logo-dark.png" class="logoTop" alt="">
+      </div>
+      <ul class="nav-links">
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+    </div>
+    </nav>
+  </header>
+  
+  <section class="ad-Top">
+    <h1 class="ad-topH1">App design</h1>
+    <p class="ad-topP">Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.</p>
+  </section>  
 
-  App design
-  Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.
+  <section class="ad-mainEx">
+    <div class="ad-main1">
+      <div class="ad-mainImgTop">
+        <img src="/assets/app-design/desktop/image-airfilter.jpg" alt="" class="ad-Img">
+      </div>
+      <div class="ad-mainWU">
+        <h3 class="ad-mainH3">Airfilter</h3>
+        <p class="ad-mainP">Solving the problem of poor indoor air quality by filtering the air</p>
+      </div>
+    </div>
 
-  Airfilter
-  Solving the problem of poor indoor air quality by filtering the air
+    <div class="ad-main2">
+      <div class="ad-mainImgTop">
+        <img src="/assets/app-design/desktop/image-eyecam.jpg" alt="" class="ad-Img">
+      </div>
+      <div class="ad-mainWU">
+        <h3 class="ad-mainH3">Eyecam</h3>
+        <p class="ad-mainP">Product that lets you edit your favorite photos and videos at any time</p>
+      </div>
+    </div>
 
-  Eyecam
-  Product that lets you edit your favorite photos and videos at any time
+    <div class="ad-main3">
+      <div class="ad-mainImgTop">
+        <img src="/assets/app-design/desktop/image-faceit.jpg" alt="" class="ad-Img">
+      </div>
+      <div class="ad-mainWU">
+        <h3 class="ad-mainH3">Faceit</h3>
+        <p class="ad-mainP">Get to meet your favorite internet superstar with the faceit app</p>
+      </div>
+    </div>
 
-  Faceit
-  Get to meet your favorite internet superstar with the faceit app
+    <div class="ad-main4">
+      <div class="ad-mainImgTop">
+        <img src="/assets/app-design/desktop/image-todo.jpg" alt="" class="ad-Img">
+      </div>
+      <div class="ad-mainWU">
+        <h3 class="ad-mainH3">Todo</h3>
+        <p class="ad-mainP">A todo app that features cloud sync with light and dark mode</p>
+      </div>
+    </div>
 
-  Todo
-  A todo app that features cloud sync with light and dark mode
+    <div class="ad-main5">
+      <div class="ad-mainImgTop">
+        <img src="/assets/app-design/desktop/image-loopstudios.jpg" alt="" class="ad-Img">
+      </div>
+      <div class="ad-mainWU">
+        <h3 class="ad-mainH3">Loopstudios</h3>
+        <p class="ad-mainP">A VR experience app made for Loopstudios</p>
+      </div>
+    </div>
 
-  Loopstudios
-  A VR experience app made for Loopstudios
+  </section>
+  <section class="ad-designOptions">
+    <div class="ad-designWeb">
+      <div class="ad-designWu">
+        <h1 class="ad-designH1 webdesSection">Web Design</h1>
+        <h4 class="ad-designH4 ">View Projects  <a> <img src="/assets/shared/desktop/icon-right-arrow.svg" class="arrowImg"></a></a></h4>
+      </div>
+    </div>
+    <div class="ad-designGraphic">
+      <div class="ad-designWu">
+        <h1 class="ad-designH1">Graphic Design</h1>
+        <h4 class="ad-designH4">View Projects  <a> <img src="/assets/shared/desktop/icon-right-arrow.svg" class="arrowImg"></a></h4>
+      </div>
+    </div>
+  </section>
 
-  Web Design
-  View Projects
 
-  Graphic Design
-  View Projects
+  <section class="home-talk">
+    <div class="home-talkWu">
+      <h1 class="home-talkH1">Let’s talk about your project</h1>
+      <p class="home-talkP">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+    </div>
+    <button class="home-talkButton">Get in touch</button>
+  </section>
 
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can help
-  your business grow.
-  Get in touch
+</main>
+  <!-- /main body -->
+  <!-- footer -->
+<footer class="mainFooter">
+  <div class="footerLogo"><img src="/assets/shared/desktop/logo-light.png" alt="" class="footerLogoImg"></div>
 
-  Our company
-  Locations
-  Contact
-
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
+  <ul class="footerLinks">
+    <li><a href="#">Our company</a></li>
+    <li><a href="#">Locations</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <section class="footerBottom">
+    <div class="footerLocation footBottomGrp">
+      <h4 class="footerH4">Designo Central Office</h4>
+      <p class="footerP">3886 Wellington Street</p>
+      <p class="footerP">Toronto, Ontario M9C 3J5</p>
+    </div>
+    <div class="footerContact footBottomGrp">
+      <h4 class="footerH4">Contact Us (Central Office)</h4>
+      <p class="footerP">P : +1 253-863-8967</p>
+      <p class="footerP">M : contact@designo.co</p>
+    </div>
+    <div class="btn-group footBottomGrp">
+      <a href="#"><img src="/assets/shared/desktop/icon-facebook.svg" alt="" class="socialBtns"></a>
+      <a href="#"><img src="/assets/shared/desktop/icon-instagram.svg" alt="" class="socialBtns"></a>
+      <a href="#"><img src="/assets/shared/desktop/icon-pinterest.svg" alt="" class="socialBtns"></a>
+      <a href="#"><img src="/assets/shared/desktop/icon-twitter.svg" alt="" class="socialBtns"></a>
+      <a href="#"><img src="/assets/shared/desktop/icon-youtube.svg" alt="" class="socialBtns"></a>
+    </div>
+  </section>
+</footer> 
+<script src="/script.js"></script> 
 </body>
 </html>
