@@ -3,49 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
-  Our Company
-  Locations
-  Contact
+  <!-- Nav -->
+  <header class="mainHeader">
+    <nav class="mainNav">  
+      <div class="logo">
+        <img src="/assets/shared/desktop/logo-dark.png" class="logoTop" alt="">
+      </div>
+      <ul class="nav-links">
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+    </div>
+    </nav>
+  </header>    <!-- /nav -->
 
-  Graphic design
-  We deliver eye-catching branding materials that are tailored to meet your business objectives.
+  <section class="gd-Top">
+    <h1 class="gd-topH1">Graphic design</h1>
+    <p class="gd-topP"> We deliver eye-catching branding materials that are tailored to meet your business objectives.</p>
+  </section>  
 
-  Tim Brown
-  A book cover designed for Tim Brown’s new release, ‘Change’
+  <section class="gd-mainEx">
+    <div class="gd-main1">
+      <div class="gd-mainImgTop">
+        <img src="/assets/graphic-design/desktop/image-change.jpg" alt="" class="gd-Img">
+      </div>
+      <div class="gd-mainWU">
+        <h3 class="gd-mainH3">Tim Brown</h3>
+        <p class="gd-mainP">A book cover designed for Tim Brown’s new release, ‘Change’</p>
+      </div>
+    </div>
+    <div class="gd-main2">
+      <div class="gd-mainImgTop">
+        <img src="/assets/graphic-design/desktop/image-boxed-water.jpg" alt="" class="gd-Img">
+      </div>
+      <div class="gd-mainWU">
+        <h3 class="gd-mainH3">Boxed water</h3>
+        <p class="gd-mainP">A simple packaging concept made for Boxed Water</p>
+      </div>
+    </div>
+    <div class="gd-main3">
+      <div class="gd-mainImgTop">
+        <img src="/assets/graphic-design/desktop/image-science.jpg" alt="" class="gd-Img">
+      </div>
+      <div class="gd-mainWU">
+        <h3 class="gd-mainH3">Science!</h3>
+        <p class="gd-mainP">A poster made in collaboration with the Federal Art Project</p>
+      </div>
+    </div>
 
-  Boxed water
-  A simple packaging concept made for Boxed Water
+</section>
 
-  Science!
-  A poster made in collaboration with the Federal Art Project
+<section class="gd-designOptions">
+  <div class="gd-designApp">
+    <div class="gd-designWu" id="gd-designAppWU">
+      <h1 class="home-designH1 ">App Design</h1>
+      <h4 class="home-designH4 ">View Projects  <a> <img src="/assets/shared/desktop/icon-right-arrow.svg" class="arrowImg"></a></h4>
+    </div>
+  </div>
+  <div class="gd-designWeb" >
+    <div class="gd-designWu" id="gd-designGDWU">
+      <h1 class="home-designH1">Web Design</h1>
+      <h4 class="home-designH4">View Projects  <a> <img src="/assets/shared/desktop/icon-right-arrow.svg" class="arrowImg"></a></h4>
+    </div>
+  </div>
+</section>
 
-  App Design
-  View Projects
+<section class="home-talk">
+  <div class="home-talkWu">
+    <h1 class="home-talkH1">Let’s talk about your project</h1>
+    <p class="home-talkP">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+  </div>
+  <button class="home-talkButton">Get in touch</button>
+</section>
 
-  Web Design
-  View Projects
 
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can 
-  help your business grow.
-  Get in touch
+<!-- footer -->
+<footer class="mainFooter">
+  <div class="footerLogo"><img src="/assets/shared/desktop/logo-light.png" alt="" class="footerLogoImg"></div>
 
-  Our company
-  Locations
-  Contact
-
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
+  <ul class="footerLinks">
+    <li><a href="#">Our company</a></li>
+    <li><a href="#">Locations</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <section class="footerBottom">
+    <div class="footerLocation footBottomGrp">
+      <h4 class="footerH4">Designo Central Office</h4>
+      <p class="footerP">3886 Wellington Street</p>
+      <p class="footerP">Toronto, Ontario M9C 3J5</p>
+    </div>
+    <div class="footerContact footBottomGrp">
+      <h4 class="footerH4">Contact Us (Central Office)</h4>
+      <p class="footerP">P : +1 253-863-8967</p>
+      <p class="footerP">M : contact@designo.co</p>
+    </div>
+    <div class="btn-group footBottomGrp">
+      <a href="#"><img src="/assets/shared/desktop/icon-facebook.svg" alt="" class="socialBtns"></a>
+      <a href="#"><img src="/assets/shared/desktop/icon-instagram.svg" alt="" class="socialBtns"></a>
+      <a href="#"><img src="/assets/shared/desktop/icon-pinterest.svg" alt="" class="socialBtns"></a>
+      <a href="#"><img src="/assets/shared/desktop/icon-twitter.svg" alt="" class="socialBtns"></a>
+      <a href="#"><img src="/assets/shared/desktop/icon-youtube.svg" alt="" class="socialBtns"></a>
+    </div>
+  </section>
+</footer> 
+<script src="/script.js"></script> 
 </body>
 </html>

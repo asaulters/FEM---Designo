@@ -353,9 +353,11 @@ Home-----------------------------------------
 }
 
 /* -----------------------------------------
-Web Deisgn-----------------------------------------
+Web Deisgn/Graphic-----------------------------------------
 -----------------------------------------*/
-.wd-Top{
+.wd-Top,
+.gd-Top{
+
     height: 300px;
     background-color: #e78168;
     background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
@@ -363,13 +365,15 @@ Web Deisgn-----------------------------------------
     border-radius: 10px;
 }
 
-.wd-topH1{
+.wd-topH1,
+.gd-topH1{
     color: white;
     margin: auto;
-    padding-top: 30%;
+    padding-top: 20%;
     font-family: 'Jost', sans-serif;
 }
-.wd-topP{
+.wd-topP,
+.gd-topP{
     color: white;
     width: 90%;
     margin: auto;
@@ -379,7 +383,8 @@ Web Deisgn-----------------------------------------
     font-family: 'Jost', sans-serif;
 }
 
-.wd-mainEx{
+.wd-mainEx,
+.gd-mainEx{
     margin-top: 5%;
 }
 
@@ -388,23 +393,32 @@ Web Deisgn-----------------------------------------
 .wd-main3,
 .wd-main4,
 .wd-main5,
-.wd-main6{
+.wd-main6,
+.gd-main1,
+.gd-main2,
+.gd-main3,
+.gd-main4,
+.gd-main5,
+.gd-main6{
     height: 150%;
     display: grid;
     grid-template-rows: 70% 30%;
-    width: 95%;
+    width: 90%;
     margin: auto;
     padding-top: 5%;
 }
-.wd-mainImgTop{
+.wd-mainImgTop,
+.gd-mainImgTop{
     grid-row: 1/2;
     
 }
-.wd-Img{
+.wd-Img,
+.gd-Img{
     width: 100%;
     border-radius: 10px 10px 0px 0px ;
 }
-.wd-mainWU{
+.wd-mainWU,
+.gd-mainWU{
     grid-row: 2/3;
     text-align: center;
     background-color: #f8ded9;
@@ -412,10 +426,12 @@ Web Deisgn-----------------------------------------
 
     font-family: 'Jost', sans-serif;
 }
-.wd-mainH3{
+.wd-mainH,
+.gd-mainH3{
     color: #e78168;
 }
-.wd-mainP{
+.wd-mainP,
+.gd-mainP{
     color: black;
     width: 80%;
     margin: auto;
@@ -427,18 +443,18 @@ Web Deisgn-----------------------------------------
     padding-top: 10%;
 }
 
-.wd-designOptions{
+.wd-designs,
+.gd-designOptions{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
-    
-
     width: 90%;
-    
+    margin: auto;
 }
 
-.wd-designApp{
+.wd-designApp,
+.gd-designApp{
     grid-row: 1/2;
     height: 200px;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/assets/home/mobile/image-app-design.jpg);
@@ -455,9 +471,19 @@ Web Deisgn-----------------------------------------
     background-size: cover;
     margin-top: 5%;
 }
-.wd-designWu{
+.gd-designWeb{
+    grid-row: 2/3;
+    height: 200px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/assets/home/mobile/image-web-design.jpg);
+    border-radius: 20px;
+    background-size: cover;
+    margin-top: 5%;
+}
+.wd-designWu,
+.gd-designWu{
     color: white;
     margin-left: 30%;
+    margin-top: 15%;
 }
 
 /* ------------------------------------------
@@ -742,18 +768,20 @@ App Design---------------------------------------
 }
 
 /* ----------------------------------------
-Tablet Web Design------------------------
+Tablet  Designs------------------------
 ----------------------------------------*/
 
 .wd-topH1,
-.ad-topH1{
+.ad-topH1,
+.gd-topH1{
     padding-top: 10%;
     font-size: 40px;
     font-family: 'Jost', sans-serif;
     
 }
 .wd-topP,
-.ad-topP{
+.ad-topP,
+.gd-topP{
     line-height: 30px;
     width: 80%;
 }
@@ -769,7 +797,10 @@ Tablet Web Design------------------------
 .ad-main3,
 .ad-main4,
 .ad-main5,
-.ad-main6{
+.ad-main6,
+.gd-main1,
+.gd-main2,
+.gd-main3{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
@@ -777,29 +808,34 @@ Tablet Web Design------------------------
 
 }
 .wd-mainImgTop,
-.ad-mainImgTop{
+.ad-mainImgTop,
+.gd-mainImgTop{
     grid-column: 1/2;
     grid-row: 1/2;
     
 }
 .wd-Img,
-.ad-mainImg{
+.ad-mainImg,
+.gd-Img{
     border-radius: 10px 0px 0px 10px; 
 }
 .wd-mainWU,
-.ad-mainWU{
+.ad-mainWU,
+.gd-mainWU{
     grid-column: 2/3;
     grid-row: 1/2; 
     border-radius: 0px 10px 10px 0px;
 }
 .wd-mainH3,
-.ad-mainH3{
+.ad-mainH3,
+.gd-mainH3{
     padding-top: 3rem;
     font-size: 2em;
 }
 
 .wd-designOptions,
-.ad-designOptions{
+.ad-designOptions,
+.gd-designOptions{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
@@ -811,8 +847,10 @@ Tablet Web Design------------------------
     
 }
 
-.wd-designApp{
+.wd-designApp,
+.gd-designApp{
     grid-row: 1/2;
+    grid-column: 1/2;
     height: 200px;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/assets/home/tablet/image-app-design.jpg);
     border-radius: 20px;
@@ -830,18 +868,31 @@ Tablet Web Design------------------------
     margin-top: 5%;
 }
 .wd-designWu,
-.ad-designWu{
+.ad-designWu,
+.gd-designWu{
     color: white;
     margin-left: 40%;
-    padding-top: 5%;
+    padding-top: 2%;
+    margin-top: 5%;
 }
 .ad-designWeb{
     grid-row: 1/2;
+    grid-column: 1/2;
     height: 200px;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/assets/home/tablet/image-web-design.jpg);
     border-radius: 20px;
     background-size: cover;
     margin-top: 5%;
+
+}
+.gd-designWeb{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    height: 200px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/assets/home/tablet/image-web-design.jpg);
+    border-radius: 20px;
+    background-size: cover;
+    
 
 }
 
@@ -970,38 +1021,51 @@ Tablet Web Design------------------------
 /* ------------------------------------
 Designs-----------------------------
 ------------------------------------*/
-   .ad-topH1{
+   .ad-topH1,
+   .wd-topH1,
+   .gd-topH1{
        padding-top: 5%;
    }
 
-    .ad-topP{
+    .ad-topP,
+    .wd-topP,
+    .gd-topP{
         margin-bottom: 10%;
     }
 
 
-
+    .gd-mainEx{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        width: 90%;
+        margin: auto;
+    }
     .wd-mainEx,
     .ad-mainEx{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 10px;
-        width: 95%;
+        width: 90%;
         margin: auto;
     }
 
     .wd-main1,
-    .ad-main1{
+    .ad-main1,
+    .gd-main1{
         grid-column: 1/2;
         grid-row: 1/2;
     }
     .wd-main2,
-    .ad-main2{
+    .ad-main2,
+    .gd-main2{
         grid-column: 2/3;
         grid-row: 1/2;
     }
     .wd-main3,
-    .ad-main3{
+    .ad-main3,
+    .gd-main3{
         grid-column: 3/4;
         grid-row: 1/2;
     }
@@ -1032,65 +1096,78 @@ Designs-----------------------------
     .ad-main3,
     .ad-main4,
     .ad-main5,
-    .ad-main6{
+    .ad-main6,
+    .gd-main1,
+    .gd-main2,
+    .gd-main3{
         height: 100%;
         display: grid;
         grid-template-rows: 60% 40%;
-        width: 95%;
+        width: 90%;
         margin: auto;
         
         grid-template-columns: 100%;
     }
 
     .wd-mainImgTop,
-    .ad-mainImgTop{
+    .ad-mainImgTop,
+    .gd-mainImgTop{
         grid-column: 1/2;
         grid-row: 1/2;
     }
     .wd-mainWU,
-    .ad-mainWU{
+    .ad-mainWU,
+    .gd-mainWU{
         grid-column: 1/2;
         grid-row: 2/3;
         border-radius: 0px 0px 10px 10px;
     }
     .wd-mainH3,
-    .ad-mainH3{
+    .ad-mainH3,
+    .gd-mainH3{
         padding-top: initial;
     }
     .wd-Img,
-    .ad-Img{
+    .ad-Img,
+    .gd-Img{
         border-radius: 10px 10px 0px 0px;
     }
 
     .wd-designs,
-    .ad-designOptions{
+    .ad-designOptions,
+    .gd-designOptions{
         margin-top: 10%;
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
+        grid-template-columns: 47% 50%;
+        grid-template-rows: 200px;
         grid-gap: 10px;
         margin-bottom: -10%;
-        width: 95%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .wd-designApp,
-    .ad-designWeb{
+    .ad-designWeb,
+    .gd-designApp{
         grid-column: 1/2;
         grid-row: 1/2;
     }
     .wd-designGraphic,
-    .ad-designGraphic{
+    .ad-designGraphic,
+    .gd-designWeb{
         grid-column: 2/3;
         grid-row: 1/2;
     }
     .wd-designWu,
-    .ad-designWu{
+    .ad-designWu,
+    .gd-designWu{
         margin-left: 35%;
         padding-bottom: 10%;
     }
-    #wd-designAppWU, 
+    /* #wd-designAppWU, 
     #wd-designGDWU {
         padding-top: 5%;
-    }
+    } */
 
 }
 /* end Desktop display */
