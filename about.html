@@ -3,64 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
-  Our Company
-  Locations
-  Contact
+  <!-- Nav -->
+  <header class="mainHeader">
+    <nav class="mainNav">  
+      <div class="logo">
+        <img src="/assets/shared/desktop/logo-dark.png" class="logoTop" alt="">
+      </div>
+      <ul class="nav-links">
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+    </div>
+    </nav>
+  </header><!-- /nav -->
 
-  About us
-  Founded in 2010, we are a creative agency that produces lasting results for our clients. 
-  We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
-  that make real impact. We’re always looking forward to creating brands, products, and 
-  digital experiences that connect with our clients' audiences.
+  <section class="about-top">
+    <div class="about-topWu">
+      <h3 class="about-topH3">About us</h3>
 
-  World-class talent
-  We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
-  crafted from concept to launch, ensuring success in its given market. We are constantly updating 
-  our skills in a myriad of platforms.
+      <p class="about-topP">Founded in 2010, we are a creative agency that produces lasting results for our clients. We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients' audiences.</p>
+    </div>
+    <div class="about-topImg"></div>
+    
+  </section>
+  <section class="about-about1">
+    <div class="about-aboutImg1"></div>
+    <div class="about-aboutWu">
+      <h2 class="about-aboutH2">World-Class Talent</h2>
+      <p class="about-aboutP1"></p>
+        We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
+        crafted from concept to launch, ensuring success in its given market. We are constantly updating 
+        our skills in a myriad of platforms.
+        <br><br>
+        Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
+        are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
+        Clients have always been impressed with our high-quality outcomes that encapsulates their 
+        brand’s story and mission.
+      </p>
+    </div>  
+  </section>
+  <section class="about-locations">
+    <div class="about-location1">
+      <div class="about-location1ImgDiv"><img src="/assets/shared/desktop/illustration-canada.svg" alt="Canada Graphic" class="about-location1Img"></div>
+      <div class="about-location1WU">
+        <h3 class="aboutLocationH3">Canada</h3>
+        <button class="about-locationButon">See location</button>
+      </div>
+    </div>
+    <div class="about-location2">
+      <div class="about-location2ImgDiv"><img src="/assets/shared/desktop/illustration-australia.svg" alt="Canada Graphic" class="about-location2Img"></div>
+      <div class="about-location2WU">
+        <h3 class="aboutLocationH3">Australia</h3>
+        <button class="about-locationButon">See location</button>
+      </div>
+    </div>
+    <div class="about-location3">
+      <div class="about-location3ImgDiv"><img src="/assets/shared/desktop/illustration-united-kingdom.svg" alt="Canada Graphic" class="about-location3Img"></div>
+      <div class="about-location3WU">
+        <h3 class="aboutLocationH3">United Kingdom</h3>
+        <button class="about-locationButon">See location</button>
+      </div>
+    </div>
 
-  Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
-  are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
-  Clients have always been impressed with our high-quality outcomes that encapsulates their 
-  brand’s story and mission.
+  </section>
 
-  The real deal
-  As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
-  Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
-  opportunity. We make design and technology more accessible and give you tools to measure success.
 
-  We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
-  we inspire audiences to take action and drive real results.
+  <section class="about-about2">
+    <div class="about-aboutImg2"></div>
+    <div class="about-aboutWu" id="about-aboutWu2">
+      <h2 class="about-aboutH2">The Real Deal</h2>
+      <p class="about-aboutP1"></p>
+        As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
+        Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
+        opportunity. We make design and technology more accessible and give you tools to measure success.
+        <br><br>
+        We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
+        we inspire audiences to take action and drive real results.
+        </p>
+    </div>  
+  </section>
 
-  Canada
-  See location
+  <section class="home-talk">
+    <div class="home-talkWu">
+      <h1 class="home-talkH1">Let’s talk about your project</h1>
+      <p class="home-talkP">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+    </div>
+    <button class="home-talkButton">Get in touch</button>
+  </section>
 
-  Australia
-  See location
-
-  United Kingdom
-  See location
-
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can 
-  help your business grow.
-  Get in touch
-
-  Our company
-  Locations
-  Contact
-
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
-</html>
+  <footer class="mainFooter">
+    <div class="footerLogo"><img src="/assets/shared/desktop/logo-light.png" alt="" class="footerLogoImg"></div>
+  
+    <ul class="footerLinks">
+      <li><a href="#">Our company</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <section class="footerBottom">
+      <div class="footerLocation footBottomGrp">
+        <h4 class="footerH4">Designo Central Office</h4>
+        <p class="footerP">3886 Wellington Street</p>
+        <p class="footerP">Toronto, Ontario M9C 3J5</p>
+      </div>
+      <div class="footerContact footBottomGrp">
+        <h4 class="footerH4">Contact Us (Central Office)</h4>
+        <p class="footerP">P : +1 253-863-8967</p>
+        <p class="footerP">M : contact@designo.co</p>
+      </div>
+      <div class="btn-group footBottomGrp">
+        <a href="#"><img src="/assets/shared/desktop/icon-facebook.svg" alt="" class="socialBtns"></a>
+        <a href="#"><img src="/assets/shared/desktop/icon-instagram.svg" alt="" class="socialBtns"></a>
+        <a href="#"><img src="/assets/shared/desktop/icon-pinterest.svg" alt="" class="socialBtns"></a>
+        <a href="#"><img src="/assets/shared/desktop/icon-twitter.svg" alt="" class="socialBtns"></a>
+        <a href="#"><img src="/assets/shared/desktop/icon-youtube.svg" alt="" class="socialBtns"></a>
+      </div>
+    </section>
+  </footer> 
+  <script src="/script.js"></script> 
+  </body>
+  </html>
