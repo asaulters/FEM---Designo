@@ -3,58 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
-  Our Company
-  Locations
-  Contact
-
-  Canada
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact
-  P : +1 253-863-8967
-  M : contact@designo.co
-
-  Australia
-  Designo AU Office
-  19 Balonne Street
-  New South Wales 2443
-
-  Contact
-  P : (02) 6720 9092
-  M : contact@designo.au
-
-  United Kingdom
-  Designo UK Office
-  13 Colorado Way
-  Rhyd-y-fro SA8 9GA
-
-  Contact
-  P : 078 3115 1400
-  M : contact@designo.uk
-
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can 
-  help your business grow.
-  Get in touch
+    <!-- Nav -->
+    <header class="mainHeader">
+      <nav class="mainNav">  
+        <div class="logo">
+          <img src="/assets/shared/desktop/logo-dark.png" class="logoTop" alt="">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+      </div>
+      </nav>
+    </header><!-- /nav -->
   
-  Our company
-  Locations
-  Contact
+  <section class="loc-mainContainer"> 
+    <div class="loc-loc1">
+        <div class="loc-locImg1"></div>
+        <div class="loc-locWU locWU1">
+            <div class="loc-locTop">
+              <h1 class="locTopH1">Canada</h1>
+            </div>      
+            <div class="loc-locAddress"> 
+              <h3 class="loc-locH3">Designo Central Office</h3>
+              <p class="loc-locP">3886 Wellington Street<br>
+              Toronto, Ontario M9C 3J5</p>
+            </div>  
+            <div class="loc-locPhone">
+              <h3 class="loc-locH3">Contact</h3>
+              <p class="loc-locP">P : +1 253-863-8967<br>
+              M : contact@designo.co</p>
+            </div>
+        </div>
+  </div>
+
+
+    <div class="loc-loc2">
+        <div class="loc-locImg2"></div>
+        <div class="loc-locWU locWU2">
+            <div class="loc-locTop">
+              <h1 class="locTopH1">Australia</h1>
+            </div>      
+            <div class="loc-locAddress"> 
+              <h3 class="loc-locH3">Designo AU Office</h3>
+              <p class="loc-locP">19 Balonne Street<br>
+                New South Wales 2443</p>
+            </div>  
+            <div class="loc-locPhone">
+              <h3 class="loc-locH3">Contact</h3>
+              <p class="loc-locP">P : (02) 6720 9092<br>
+                M : contact@designo.au</p>
+            </div>
+        </div>
+  </div>
+
+      <div class="loc-loc3">
+        <div class="loc-locImg3"></div>
+        <div class="loc-locWU locWU3">
+            <div class="loc-locTop">
+              <h1 class="locTopH1">United Kingdom</h1>
+            </div>      
+            <div class="loc-locAddress"> 
+              <h3 class="loc-locH3">Designo UK Office</h3>
+              <p class="loc-locP">13 Colorado Way<br>
+                Rhyd-y-fro SA8 9GA</p>
+            </div>  
+            <div class="loc-locPhone">
+              <h3 class="loc-locH3">Contact</h3>
+              <p class="loc-locP">P : 078 3115 1400<br>
+                M : contact@designo.uk</p>
+            </div>
+        </div>
+  </div>
+
+</section> 
+
+  <section class="home-talk">
+    <div class="home-talkWu">
+      <h1 class="home-talkH1">Let’s talk about your project</h1>
+      <p class="home-talkP">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+    </div>
+    <button class="home-talkButton">Get in touch</button>
+  </section>
+
+  <footer class="mainFooter">
+    <div class="footerLogo"><img src="/assets/shared/desktop/logo-light.png" alt="" class="footerLogoImg"></div>
   
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-  
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
-</html>
+    <ul class="footerLinks">
+      <li><a href="#">Our company</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <section class="footerBottom">
+      <div class="footerLocation footBottomGrp">
+        <h4 class="footerH4">Designo Central Office</h4>
+        <p class="footerP">3886 Wellington Street</p>
+        <p class="footerP">Toronto, Ontario M9C 3J5</p>
+      </div>
+      <div class="footerContact footBottomGrp">
+        <h4 class="footerH4">Contact Us (Central Office)</h4>
+        <p class="footerP">P : +1 253-863-8967</p>
+        <p class="footerP">M : contact@designo.co</p>
+      </div>
+      <div class="btn-group footBottomGrp">
+        <a href="#"><img src="/assets/shared/desktop/icon-facebook.svg" alt="" class="socialBtns"></a>
+        <a href="#"><img src="/assets/shared/desktop/icon-instagram.svg" alt="" class="socialBtns"></a>
+        <a href="#"><img src="/assets/shared/desktop/icon-pinterest.svg" alt="" class="socialBtns"></a>
+        <a href="#"><img src="/assets/shared/desktop/icon-twitter.svg" alt="" class="socialBtns"></a>
+        <a href="#"><img src="/assets/shared/desktop/icon-youtube.svg" alt="" class="socialBtns"></a>
+      </div>
+    </section>
+  </footer> 
+  <script src="/script.js"></script> 
+  </body>
+  </html>
