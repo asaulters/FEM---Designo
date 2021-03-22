@@ -21,6 +21,7 @@ nav {
     min-height: 8vh;
     background-color: white;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .logo{
@@ -43,6 +44,7 @@ nav {
     justify-content: space-around;
     align-items: flex-end;
     width: 40%;
+    z-index: 20;
 }
 
 .nav-links li{
@@ -351,6 +353,12 @@ Home-----------------------------------------
     border-radius: 1000px;
     background: lightgray;
 }
+/* .home-designH4{
+    text-decoration: none;
+    color: white;
+
+} */
+a { color: inherit; } 
 
 /* -----------------------------------------
 Web Deisgn/Graphic-----------------------------------------
@@ -649,7 +657,8 @@ About ----------------------------------------
     line-height: 20px;
     font-weight: 700;
 }
-.about-locations{
+.about-locations,
+.contact-locations{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -657,22 +666,30 @@ About ----------------------------------------
 }
 .about-location1WU,
 .about-location2WU,
-.about-location3WU{
+.about-location3WU,
+.contact-location1WU,
+.contact-location2WU,
+.contact-location3WU{
     text-align: center;
     margin-bottom: 15%;
 }
 .about-location1ImgDiv,
 .about-location2ImgDiv,
-.about-location3ImgDiv{
+.about-location3ImgDiv,
+.contact-location1ImgDiv,
+.contact-location2ImgDiv,
+.contact-location3ImgDiv{
     background-color: #fff1ee;
     border-radius: 50%;
 
 }
-.aboutLocationH3{
+.aboutLocationH3,
+.contactLocationH3{
     font-size: 25px;
     font-family: 'Jost', sans-serif;
 }
-.about-locationButon{
+.about-locationButon,
+.contact-locationButon{
     font-size: 20px;
     background-color: #e78168;
     font-family: 'Jost', sans-serif;
@@ -732,10 +749,82 @@ Location mobile------------------------------------------
     font-size: 35px;
 }
 
+/* ---------------------------------------------------
+Contact mobile---------------------------------------------------
+---------------------------------------------------*/
 
+#contactForm{
+    background-color: #e78168;
+    color: white;
+    height: max-content;
+    padding: 5% 10%;
+    font-family: 'Jost', sans-serif;
+    opacity: 1;
+    margin-bottom: 10%;
+}
+.form-formWU{
+    opacity: 10;
+    background-color: #e78168;
+    text-align: center;
+    line-height: 25px;
+    background-image: url(/assets/shared/desktop/bg-pattern-three-circles.svg);
+    font-family: 'Jost', sans-serif;
+}
+.form-formH2{
+    font-size: 30px;
+}
+.form-formP{
+    font-size: 20px;
+}
+.form-formInput{
+    line-height: 30px;
+    height: max-content;
+}
+.formName,
+.formEmail,
+.formPhone{
+    height: 50px;
+    border-bottom: white solid 1px;
+    background-color: #e78168;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    width: 95%;
+    margin-bottom: 5%;
+}
+.formMessage{
+    height: 150px;
+    border-bottom: white solid 1px;
+    background-color: #e78168;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    width: 95%;
+    margin-bottom: 5%;
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+    font-size: 20px;
+  }
 
-
-
+  .formSubmitButton{
+    display: block;
+      height: 60px;
+      width: 150px;
+      margin-left:auto;
+      margin-right:auto;
+      margin-bottom:10%;
+      margin-top: 5%;
+      font-family: 'Jost', sans-serif;
+      background-color: white;
+      font-size: 20px;
+      font-weight: 400;
+      border-radius: 10px;
+      /* padding-bottom: 10%; */
+  }
 
 
 /* ------------------------------------------
@@ -1053,16 +1142,21 @@ About Tablet--------------------------------------
 .about-about1,
 .about-about2{
     width: 90%;
+    height: min-content;
     margin: 10% auto ;
     border-radius: 10px;
+    padding: 5%;
 }
 .about-aboutImg1{
     background-image: url(/assets/about/tablet/image-world-class-talent.jpg);
     border-radius: 10px;
+    /* background-size: cover; */
 }
 .about-aboutImg2{
     background-image: url(/assets/about/tablet/image-real-deal.jpg);
     border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /* ------------------------------------
 Location tablet----------------------------
@@ -1108,9 +1202,27 @@ Location tablet----------------------------
     text-align: left;
 }
 
+/* ------------------------------------------------
+Contact Tablet-------------------------------------
+------------------------------------------------*/
+#contactForm{
+    width: 70%;
+    margin: 0% auto 10% auto;
+    border-radius: 20px;
+    
+}
+.form-formWU{
+    background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
+    background-repeat:repeat-y;
+    background-size: 80%;
+    text-align: left;
+    z-index: 1;
+}
 
-
-
+.formSubmitButton{
+    width: 150px;
+    margin-right: 3%;
+}
 
 
 
@@ -1128,10 +1240,11 @@ end tablet----------------------------
         grid-gap: 20PX;
     }
     .footerLogoImg{
-        margin-bottom: 15%;
+        margin-bottom: 45%;
+        padding-bottom: 20%;
     }
     .footerLogo{
-        margin-bottom: 15%;
+        margin-top: -7%;
     }
 
     .home-talk{
@@ -1210,7 +1323,7 @@ end tablet----------------------------
     .home-aboutUs{
         display: flex;
         flex-direction: row;
-        background-image: url(/assets/home/desktop/bg-pattern-hero-home.svg);
+  
         
     }
     .home-about1,
@@ -1219,7 +1332,9 @@ end tablet----------------------------
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
-        width: 30%
+        width: 30%;
+        margin: auto;
+        
     }
     .home-aboutImg{
         grid-column: 1/2;
@@ -1240,12 +1355,17 @@ Designs Desktop
    .wd-topH1,
    .gd-topH1{
        padding-top: 5%;
+       font-family: 'Jost', sans-serif;
+       font-size: 40px;
    }
 
     .ad-topP,
     .wd-topP,
     .gd-topP{
         margin-bottom: 10%;
+        font-size: 20px;
+        font-family: 'Jost', sans-serif;
+        margin-top: -2%;
     }
 
 
@@ -1377,7 +1497,9 @@ Designs Desktop
     .ad-designWu,
     .gd-designWu{
         margin-left: 35%;
-        padding-bottom: 10%;
+        padding-bottom: 20%;
+        margin-bottom: 50%;
+        /* margin-top: -5%; */
     }
 /* -------------------------------------------------
 About Desktop---------------------------------------
@@ -1545,15 +1667,51 @@ Location Desktop----------------------------------
     padding-left: 5%;
 }
 
+/* ------------------------------------------------------------
+contact desktop-------------------------------------------------
+------------------------------------------------------------*/
+#contactForm{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 100%;
+    grid-gap: 20px;
+}
+.form-formWU{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: auto;
+    padding-top: 25%;
+    background-size: 100%;
+    height: 80%;
+}
+.form-formH2{
+    font-size: 40px;
+}
+.form-formP{
+    line-height: 30px;
+    font-size: 25px;
+}
+.form-formInput{
+    padding-top: 5%;
+}
 
-
-
+.contact-locations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
 
 
 }
 /* end Desktop display */
+/* ---------------------------------------
+Talk/footer larger display -------------------------------
+--------------------------------------------------------*/
 
-
-
+.home-talk{
+    margin-bottom: -10%;
+}
 
 

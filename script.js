@@ -1,3 +1,8 @@
+let homeImgBtn = document.querySelector('.footerLogoImg');
+
+
+console.log (homeImgBtn);
+
 //Nav
 const navSlide = () =>{
     const burger = document.querySelector('.burger');
@@ -26,3 +31,8 @@ const navSlide = () =>{
 });
 }
 navSlide()
+
+
+homeImgBtn.addEventListener('click', () => {
+    window.location.href = "index.html";
+});
