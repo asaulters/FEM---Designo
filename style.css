@@ -236,7 +236,15 @@ Shared end----------------------------------
 /* -----------------------------------------
 Home-----------------------------------------
 -----------------------------------------*/
+/* .wrapper{
+    display: flex;-
+    flex-direction: column;
+    justify-content: space-between;
+} */
 
+html, body{
+    height: 100%;
+}
 .mainHead{
     background-color: #e78168;
     height: 43.75em;
@@ -855,7 +863,7 @@ Contact mobile---------------------------------------------------
 
 
     .mainHead{
-        height: 750px;
+        height: 800px;
         margin-bottom: 5%;
         position: relative;
     }
@@ -868,9 +876,9 @@ Contact mobile---------------------------------------------------
         font-size: 20px;
     }
     .topImg{
-        height: 95%;
+        height: 94%;
         margin-top: 5%;
-        margin-bottom: -20px;
+        margin-bottom: 1px;
         background-position: 50% 8%;
         padding-bottom: 0%;
 
@@ -1235,9 +1243,14 @@ end tablet----------------------------
 
 @media(min-width:817px){
     /* Shared */
+
     .mainFooter{
         height: 400px;
         grid-gap: 20PX;
+        position: relative;
+        bottom: 0;
+        width: 100vw;
+
     }
     .footerLogoImg{
         margin-bottom: 45%;
@@ -1272,7 +1285,11 @@ end tablet----------------------------
         font-size: 30px;
     }
 
-
+    .btn-group{
+        width: 50%;
+        margin-top: 10% ;
+        margin-left: 50%;
+    }
 
 
     /* End shared */
@@ -1709,9 +1726,109 @@ contact desktop-------------------------------------------------
 /* ---------------------------------------
 Talk/footer larger display -------------------------------
 --------------------------------------------------------*/
+@media(min-width:900px){
+    .home-talk{
+        margin-bottom: -10%;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-rows:800px 1500px 450px;
+        /* display: flex;
+        justify-content:space-evenly;
+        flex-direction: column; */
 
-.home-talk{
-    margin-bottom: -10%;
+        /* height:2000px; */
+        /* margin-bottom: -10%; */
+    }
+    .mainHead{
+        grid-row: 1/2;
+        height: 100%;
+    }
+    .home-mainContainer{
+        grid-row: 2/3;
+        height:100%;
+        /* margin-bottom: 25%; */
+    }
+    .mainFooter{
+        grid-row: 3/4;
+        position: static;
+        height: 100%;
+        /* margin-top: -80%; */
+
+    }   
+
+     /* ------------------------------------------
+        Location-----------------------------
+     ----------------------------------------------*/
+
 }
 
+@media(min-width:1035px){
+    .wrapper{
+        grid-template-rows:800px 1500px 500px;
+    }
+    /* .mainFooter{
 
+        grid-template-rows: 55% 15% 30%;
+        grid-template-columns: 30% 30% 30%;
+    } */
+}
+
+@media(min-width:1150px){
+    .wrapper{
+        grid-template-rows:800px 1500px 560px;
+    }
+    .home-talk{
+        margin-bottom: -6%;
+    }
+
+
+}
+@media(min-width:1300px){
+    .wrapper{
+        min-height: 100%;
+        grid-template-rows:800px 1500px 600px;
+    }
+    .home-talk{
+        max-width: 1100px;
+        margin: 10% auto -20% auto;
+    }
+    /* .home-mainContainer{
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto -400px
+    } */
+    .mainFooter{
+        padding: auto 10%;
+    }
+
+
+} 
+@media(min-width:1400px){
+    .wrapper{
+        min-height: 100%;
+        grid-template-rows:800px 1500px 700px;
+    }
+    .home-talk{
+        margin: 5% auto -5% auto;
+    }
+    /* .mainFooter{
+        position: relative;
+        bottom: 0;
+        margin-top: 10%;
+        height: 100%;
+    } */
+    body{
+        position: relative;
+        height: fit-content;
+    }
+    .home-mainContainer::after{
+        content: '';
+        /* margin-bottom: 4000%; */
+        display: block;
+        height: 100px;
+        margin-bottom: 200px;
+    }
+
+}
